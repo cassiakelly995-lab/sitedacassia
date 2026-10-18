@@ -1,87 +1,306 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#171714">
-<meta name="color-scheme" content="light">
-<meta name="robots" content="index, follow">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cassi Kelly | Criatividade, IA e projetos digitais">
-<meta property="og:description" content="Conheça os projetos e a trajetória de Cassi Kelly em inteligência artificial e criação digital.">
-<meta property="og:locale" content="pt_BR">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="description" content="Cassi Kelly — inteligência artificial, criatividade e projetos digitais feitos com curiosidade e propósito.">
-<title>Cassi Kelly | Portfólio de IA e Projetos Digitais</title>
+<meta name="theme-color" content="#080b13">
+<meta name="description" content="Cassi Kelly — criatividade, inteligência artificial e experiências digitais.">
+<title>Cassi Kelly | Creative Technology & AI</title>
 <style>
-:root{--paper:#f4f0e9;--ink:#171714;--muted:#66645f;--line:#d7d0c5;--acid:#d9ff5f;--lilac:#c9b8ff;--orange:#ff744f;--white:#fffdf8;--max:1240px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
-header{position:sticky;top:0;z-index:30;background:rgba(244,240,233,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(23,23,20,.12)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:17px;font-weight:900;letter-spacing:-.06em;display:flex;align-items:center;gap:10px}.brand-mark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--acid);font-size:12px;letter-spacing:-.03em}.links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:700}.links a{opacity:.72}.links a:hover{opacity:1}.nav-cta{border:1px solid var(--ink);border-radius:999px;padding:10px 16px!important;opacity:1!important}.menu{display:none;border:1px solid var(--line);background:transparent;border-radius:50%;width:42px;height:42px;font-size:20px}
-.hero{padding:62px 0 78px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,76px);align-items:center}.eyebrow{display:inline-flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.16em;font-size:10px;font-weight:900}.eyebrow:before{content:"";height:2px;width:24px;background:var(--orange)}h1{font-size:clamp(50px,7.4vw,100px);line-height:.91;letter-spacing:-.085em;margin:25px 0 26px;font-weight:900;max-width:740px}h1 .accent{display:inline-block;position:relative;z-index:0;white-space:nowrap}h1 .accent:after{content:"";position:absolute;z-index:-1;left:-2%;right:-3%;bottom:4%;height:28%;background:var(--acid);transform:rotate(-2deg)}.intro{max-width:510px;font-size:clamp(16px,1.6vw,19px);color:#55534d}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:14px 20px;border-radius:999px;border:1px solid var(--ink);font-size:13px;font-weight:800;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-3px)}.primary{background:var(--ink);color:white}.primary:hover{background:#393831}.secondary:hover{background:var(--acid)}.hero-meta{display:flex;gap:20px;align-items:center;margin-top:35px;font-size:11px;color:var(--muted)}.dot{width:8px;height:8px;background:#6f9b51;border-radius:50%;box-shadow:0 0 0 5px #6f9b511c}
-.portrait-wrap{position:relative;max-width:520px;margin-left:auto;width:100%;padding:0 22px 24px 0}.portrait-frame{position:relative;background:#d7d0c5;aspect-ratio:4/5;overflow:hidden;border-radius:46% 46% 12px 12px}.portrait{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}.portrait-label{position:absolute;left:-22px;bottom:54px;background:var(--acid);padding:14px 18px;max-width:205px;font-size:12px;font-weight:900;line-height:1.3;transform:rotate(-4deg);box-shadow:5px 5px 0 var(--ink)}.portrait-index{position:absolute;right:0;top:24px;writing-mode:vertical-rl;font-size:10px;font-weight:900;letter-spacing:.18em}.scribble{position:absolute;right:-4px;bottom:0;background:var(--lilac);border:1px solid var(--ink);border-radius:50%;width:95px;height:95px;display:grid;place-items:center;text-align:center;font-size:11px;font-weight:900;transform:rotate(10deg)}
-.ticker{background:var(--ink);color:var(--white);overflow:hidden;border-block:1px solid var(--ink)}.ticker-inner{display:flex;justify-content:space-around;align-items:center;gap:32px;min-width:max-content;padding:17px 0;font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.ticker b{color:var(--acid);font-size:17px}
-section.content{padding:100px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:38px}.kicker{color:#6b685f;font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:900}.section-top h2,.story-title{font-size:clamp(36px,5.4vw,68px);line-height:.98;letter-spacing:-.075em;margin:12px 0 0;max-width:700px}.section-top p{max-width:330px;color:var(--muted);font-size:14px;margin:0}.story-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.statement{background:var(--lilac);padding:clamp(26px,4vw,48px);min-height:330px;display:flex;flex-direction:column;justify-content:space-between;border-radius:4px}.statement .quote{font-size:clamp(28px,3.5vw,43px);line-height:1.07;letter-spacing:-.06em;font-weight:850}.statement small{font-size:11px;font-weight:800}.story-copy{border:1px solid var(--line);padding:clamp(26px,4vw,48px);display:flex;flex-direction:column;justify-content:center}.story-copy h3{font-size:22px;letter-spacing:-.04em;margin:0 0 15px}.story-copy p{color:#5f5c55;font-size:14px;margin:0 0 14px}.story-copy p:last-child{margin-bottom:0}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.value{border-top:2px solid var(--ink);padding:18px 8px 0 0}.value span{font-size:11px;color:var(--orange);font-weight:900}.value h3{margin:8px 0 5px;font-size:16px}.value p{font-size:12px;color:var(--muted);margin:0}
-.projects{background:#e8e2d8}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{background:var(--white);border:1px solid #d3ccbf;display:flex;flex-direction:column;min-height:360px;transition:transform .25s,box-shadow .25s}.project:hover{transform:translateY(-5px);box-shadow:7px 7px 0 var(--ink)}.project-art{min-height:190px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--acid)}.project:nth-child(2) .project-art{background:var(--lilac)}.project:nth-child(3) .project-art{background:#f8b09c}.project:nth-child(4) .project-art{background:#d5e1d0}.orb{width:116px;height:116px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-size:42px;font-weight:900;letter-spacing:-.1em;position:relative}.orb:before,.orb:after{content:"";position:absolute;border:1px solid var(--ink);border-radius:50%;inset:-17px 10px;transform:rotate(50deg)}.orb:after{inset:10px -17px;transform:rotate(-35deg)}.art-note{position:absolute;right:16px;top:16px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;font-weight:900}.project-body{padding:24px;display:flex;flex-direction:column;flex:1}.project-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.project h3{font-size:25px;letter-spacing:-.06em;margin:0}.pill{font-size:9px;text-transform:uppercase;letter-spacing:.1em;border:1px solid var(--line);border-radius:99px;padding:5px 9px;white-space:nowrap}.project p{font-size:13px;color:var(--muted);max-width:520px}.project-link{margin-top:auto;padding-top:10px;font-size:12px;font-weight:900;display:flex;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:9px}.project-link span{font-size:18px}
-.path{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px}.path-intro p{color:var(--muted);max-width:320px;font-size:14px}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:23px 0;border-bottom:1px solid var(--line)}.step-num{font-size:11px;font-weight:900;color:#8b887e}.step h3{font-size:19px;letter-spacing:-.04em;margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:13px;max-width:620px}
-.contact-section{padding:35px 0 90px!important}.contact-box{background:var(--ink);color:var(--white);padding:clamp(30px,6vw,72px);position:relative;overflow:hidden}.contact-box:after{content:"CK";position:absolute;right:-15px;bottom:-105px;font-size:clamp(180px,28vw,360px);font-weight:900;letter-spacing:-.12em;color:#ffffff09;pointer-events:none}.contact-box .kicker{color:var(--acid)}.contact-box h2{font-size:clamp(40px,6.5vw,82px);letter-spacing:-.08em;line-height:.94;max-width:780px;margin:20px 0}.contact-box p{max-width:510px;color:#c4c1b8;font-size:14px}.contact-box .btn{position:relative;z-index:1;background:var(--acid);color:var(--ink);border-color:var(--acid);margin-top:15px}.footer{border-top:1px solid var(--line);padding:22px 0;font-size:11px;color:var(--muted)}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer strong{color:var(--ink)}
-@media(max-width:800px){.wrap{width:min(var(--max),calc(100% - 32px))}.nav{min-height:68px}.menu{display:block}.links{display:none;position:absolute;top:68px;left:0;right:0;padding:22px 24px 25px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:20px}.links.open{display:flex}.nav-cta{text-align:center}.hero{padding:42px 0 60px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero h1{font-size:clamp(52px,12vw,82px)}.portrait-wrap{max-width:470px;margin:0 auto}.section-top{display:block}.section-top p{margin-top:18px}.story-grid,.path{grid-template-columns:1fr}.statement{min-height:270px}.project-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr;gap:20px}.path{gap:24px}section.content{padding:72px 0}.contact-section{padding:10px 0 60px!important}.step{grid-template-columns:60px 1fr;gap:14px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-
-/* Refinamentos de experiência, acessibilidade e acabamento */
-:focus-visible{outline:3px solid #875de6;outline-offset:4px}
-::selection{background:var(--lilac);color:var(--ink)}
-.btn,.nav-cta,.project-link{cursor:pointer}
-.contact-actions{position:relative;z-index:2;align-items:center}
-.contact-box .contact-email{background:transparent;color:var(--white);border-color:#77756f}
-.contact-box .contact-email:hover{background:#35352f}
-.contact-detail{position:relative;z-index:2;font-size:12px!important;overflow-wrap:anywhere}
-.project:focus-within{box-shadow:7px 7px 0 var(--ink)}
-@media(max-width:480px){.contact-actions .btn{width:100%}.portrait-label{left:-8px}.scribble{right:2px;width:76px;height:76px}}
+:root {
+  --bg:#080b13;
+  --panel:#121725;
+  --text:#f6f7ff;
+  --muted:#a6aec1;
+  --accent:#b59aff;
+  --cyan:#86e7ed;
+  --border:#ffffff1a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,90%);margin:auto}
+header{
+  position:sticky;top:0;z-index:20;
+  background:#080b13ed;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border);
+}
+nav{
+  min-height:76px;display:flex;
+  align-items:center;justify-content:space-between;
+  gap:20px;
+}
+.logo{font-size:19px;font-weight:800;letter-spacing:-1px}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;align-items:center}
+.navlinks a{font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:white}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:47px;padding:12px 22px;
+  border-radius:10px;font-weight:700;font-size:14px;
+  transition:.25s;border:1px solid var(--border);
+}
+.btn:hover{transform:translateY(-3px)}
+.primary{background:var(--accent);color:#0b0c16;border:0}
+.outline{background:transparent;color:white}
+.hero{
+  min-height:680px;display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;gap:70px;padding:90px 0;
+}
+.eyebrow{
+  font-size:12px;letter-spacing:3px;
+  color:var(--cyan);font-weight:700;
+}
+h1{
+  font-size:clamp(42px,5.4vw,76px);
+  line-height:1.09;letter-spacing:-3px;
+  margin:25px 0;
+}
+.gradient{
+  background:linear-gradient(110deg,var(--accent),var(--cyan));
+  background-clip:text;-webkit-background-clip:text;
+  color:transparent;
+}
+.lead{font-size:17px;color:var(--muted);max-width:550px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.portrait{
+  position:relative;border-radius:18px;
+  overflow:hidden;aspect-ratio:4/4.5;
+  background:linear-gradient(135deg,#29263f,#151a2b);
+  border:1px solid #ffffff30;
+  box-shadow:0 30px 90px #0008;
+}
+.portrait img{
+  width:100%;height:100%;object-fit:cover;
+  object-position:center;display:block;
+}
+.portrait:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(transparent 75%,#080b1350);
+  pointer-events:none;
+}
+section{padding:95px 0}
+.section-label{
+  color:var(--accent);font-size:12px;
+  font-weight:800;letter-spacing:3px;text-transform:uppercase;
+}
+h2{
+  font-size:clamp(32px,4vw,52px);
+  letter-spacing:-1.8px;line-height:1.15;
+  margin:16px 0 24px;
+}
+.description{color:var(--muted);max-width:720px}
+.about{
+  background:linear-gradient(140deg,#14182a,#0c101c);
+  border-block:1px solid var(--border);
+}
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:65px;align-items:center;
+}
+.feature-list{display:grid;gap:16px}
+.feature{
+  padding:22px;border:1px solid var(--border);
+  border-radius:14px;background:#ffffff06;
+}
+.feature strong{display:block;color:var(--cyan);margin-bottom:5px}
+.feature p{margin:0;color:var(--muted);font-size:14px}
+.projects{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;margin-top:45px;
+}
+.project{
+  padding:28px;border-radius:18px;
+  border:1px solid var(--border);
+  background:var(--panel);
+  transition:.3s;
+}
+.project:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+}
+.project-icon{
+  width:54px;height:54px;
+  display:grid;place-items:center;
+  background:#b59aff1c;border-radius:14px;
+  color:var(--accent);font-size:25px;
+}
+.project h3{font-size:22px;margin:25px 0 10px}
+.project p{font-size:14px;color:var(--muted)}
+.tag{
+  display:inline-block;margin-top:20px;
+  color:var(--cyan);font-size:12px;font-weight:700;
+}
+.contact{
+  text-align:center;background:
+  radial-gradient(ellipse at top,#45346c55,transparent 65%);
+}
+.contact h2{max-width:720px;margin:20px auto}
+.contact p{color:var(--muted)}
+.contact .buttons{justify-content:center}
+footer{
+  border-top:1px solid var(--border);
+  padding:28px 0;text-align:center;
+  font-size:13px;color:var(--muted);
+}
+@media(max-width:850px){
+  nav{flex-wrap:wrap;padding:18px 0}
+  .navlinks{gap:14px;flex-wrap:wrap}
+  .hero{grid-template-columns:1fr;gap:35px;padding:65px 0}
+  .portrait{max-width:480px;width:100%;margin:auto;aspect-ratio:4/4}
+  .about-grid{grid-template-columns:1fr;gap:30px}
+  .projects{grid-template-columns:repeat(2,1fr)}
+  section{padding:70px 0}
+}
+@media(max-width:580px){
+  h1{font-size:clamp(39px,10vw,54px);letter-spacing:-2px}
+  .navlinks{gap:12px}
+  .navlinks a{font-size:12px}
+  .projects{grid-template-columns:1fr}
+  .buttons .btn{width:100%}
+  .hero{padding-top:45px}
+  .portrait{aspect-ratio:4/4.3}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
 </style>
 </head>
 <body>
-<header><nav class="nav wrap" aria-label="Navegação principal">
-<a class="brand" href="#inicio"><span class="brand-mark">CK</span><span>CASSI KELLY<span style="color:#777">®</span></span></a>
-<button class="menu" type="button" aria-controls="navLinks" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-<div class="links" id="navLinks"><a href="#historia">Minha história</a><a href="#projetos">Projetos</a><a href="#trajetoria">Trajetória</a><a class="nav-cta" href="#contato">Contato ↗</a></div>
-</nav></header>
+
+<header>
+  <nav class="container">
+    <a href="#inicio" class="logo">CASSI<span>KELLY.</span></a>
+    <div class="navlinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+</header>
+
 <main>
-<section class="hero" id="inicio"><div class="wrap hero-grid">
-<div><span class="eyebrow">Criatividade · Tecnologia · Coragem</span>
-<h1>Ideias grandes.<br>Começos reais.<br><span class="accent">Futuro em criação.</span></h1>
-<p class="intro">Sou Cassi Kelly. Exploro a inteligência artificial, transformo curiosidade em experiências digitais e aprendo criando — um projeto de cada vez.</p>
-<div class="actions"><a class="btn primary" href="#projetos">Explore meus projetos <span>↗</span></a><a class="btn secondary" href="#historia">Conheça minha história</a></div>
-<div class="hero-meta"><span class="dot"></span><span>Aprendizado autodidata, prática e evolução contínua.</span></div></div>
-<div class="portrait-wrap"><div class="portrait-frame"><img class="portrait" loading="eager" decoding="async" alt="Retrato de Cassi Kelly" src="retrato-cassi-kelly.jpg" alt="Retrato original de Cassi Kelly sorrindo, com cabelo cacheado e blusa preta"></div><div class="portrait-label">CURIOSIDADE QUE VIRA CRIAÇÃO.</div><div class="portrait-index">PESSOA REAL · IDEIAS EM MOVIMENTO</div><div class="scribble">PENSAR.<br>TESTAR.<br>CRIAR.</div></div>
-</div></section>
-<div class="ticker" aria-label="Áreas de interesse"><div class="ticker-inner"><span>Inteligência artificial</span><b>✳</b><span>Projetos digitais</span><b>✳</b><span>Aprender fazendo</span><b>✳</b><span>Criatividade aplicada</span><b>✳</b><span>Inteligência artificial</span></div></div>
-<section class="content" id="historia"><div class="wrap">
-<div class="section-top"><div><span class="kicker">01 / A pessoa por trás das ideias</span><h2>Não precisei saber tudo para começar.</h2></div><p>Uma jornada construída com curiosidade, tentativa, descoberta e vontade de transformar ideias em algo concreto.</p></div>
-<div class="story-grid"><article class="statement"><span class="kicker">Uma ideia que me move</span><div class="quote">“O próximo passo não precisa estar pronto. Só precisa começar.”</div><small>CASSI KELLY · APRENDER FAZENDO</small></article>
-<article class="story-copy"><h3>Minha jornada com a inteligência artificial</h3><p>Minha curiosidade me levou a explorar o universo da inteligência artificial e descobrir novas formas de pesquisar, organizar ideias e criar ferramentas digitais.</p><p>Aprender por conta própria é experimentar, errar, ajustar e tentar de novo. Nesse processo, a tecnologia deixa de ser apenas algo para observar e passa a ser uma ferramenta para construir.</p><p>Este site é uma vitrine em movimento: reúne projetos, aprendizados e próximos capítulos de uma trajetória que continua sendo escrita.</p></article></div>
-<div class="values"><article class="value"><span>01 / CURIOSIDADE</span><h3>Perguntar melhor</h3><p>Investigar possibilidades e enxergar novas formas de resolver problemas.</p></article><article class="value"><span>02 / EXPERIMENTAÇÃO</span><h3>Aprender na prática</h3><p>Testar ferramentas, observar resultados e evoluir a cada versão.</p></article><article class="value"><span>03 / CRIAÇÃO</span><h3>Tirar do papel</h3><p>Transformar descobertas em projetos digitais que podem ser explorados.</p></article></div>
-</div></section>
-<section class="content projects" id="projetos"><div class="wrap">
-<div class="section-top"><div><span class="kicker">02 / Laboratório de ideias</span><h2>Projetos com intenção.</h2></div><p>Ferramentas e experimentos digitais que representam meu caminho de aprendizado em inteligência artificial.</p></div>
-<div class="project-grid">
-<article class="project"><div class="project-art"><span class="art-note">Projeto em destaque · 01</span><div class="orb">S✳</div></div><div class="project-body"><div class="project-heading"><h3>SuperPrompt</h3><span class="pill">IA aplicada</span></div><p>Uma ferramenta criada para ajudar a estruturar prompts com mais clareza e orientar a inteligência artificial para respostas mais úteis.</p><a class="project-link" href="https://cassiakelly995-lab.github.io/geradordeprmptcassiakelly/" target="_blank" rel="noopener noreferrer">Experimentar o SuperPrompt <span>↗</span></a></div></article>
-<article class="project"><div class="project-art"><span class="art-note">Código aberto · 02</span><div class="orb">⌘</div></div><div class="project-body"><div class="project-heading"><h3>GitHub</h3><span class="pill">Experimentos</span></div><p>Um espaço para acompanhar meus repositórios públicos, experiências, aplicativos e ideias em desenvolvimento.</p><a class="project-link" href="https://github.com/cassiakelly995-lab?tab=repositories" target="_blank" rel="noopener noreferrer">Explorar meus repositórios <span>↗</span></a></div></article>
-<article class="project"><div class="project-art"><span class="art-note">Próximos capítulos · 03</span><div class="orb">↗</div></div><div class="project-body"><div class="project-heading"><h3>Novas possibilidades</h3><span class="pill">Em evolução</span></div><p>Ideias em construção, novas ferramentas e experiências que nascem da vontade de aprender fazendo.</p><a class="project-link" href="#contato">Acompanhar a jornada <span>↗</span></a></div></article>
-<article class="project"><div class="project-art"><span class="art-note">Processo criativo · 04</span><div class="orb">✳</div></div><div class="project-body"><div class="project-heading"><h3>IA + criatividade</h3><span class="pill">Exploração</span></div><p>Testar como a tecnologia pode apoiar a criação, a organização de ideias e o desenvolvimento de experiências digitais.</p><a class="project-link" href="#historia">Conhecer minha abordagem <span>↗</span></a></div></article>
-</div></div></section>
-<section class="content" id="trajetoria"><div class="wrap path"><div class="path-intro"><span class="kicker">03 / Em construção</span><h2 class="story-title">O caminho também é parte da conquista.</h2><p>Não é sobre fingir que já sei tudo. É sobre continuar aprendendo, documentando e avançando com intenção.</p></div><div class="steps">
-<article class="step"><div class="step-num">ETAPA 01</div><div><h3>A curiosidade vira caminho</h3><p>Começar a explorar a inteligência artificial e descobrir o que era possível criar com novas ferramentas.</p></div></article>
-<article class="step"><div class="step-num">ETAPA 02</div><div><h3>Aprender na prática</h3><p>Pesquisar, experimentar, testar possibilidades e desenvolver habilidades de forma autodidata.</p></div></article>
-<article class="step"><div class="step-num">ETAPA 03</div><div><h3>Transformar ideias em projetos</h3><p>Levar o aprendizado para a prática e criar ferramentas digitais, como o SuperPrompt.</p></div></article>
-<article class="step"><div class="step-num">AGORA</div><div><h3>Construir o próximo capítulo</h3><p>Refinar ideias, explorar novas possibilidades e seguir evoluindo a cada projeto.</p></div></article>
-</div></div></section>
-<section class="content contact-section" id="contato"><div class="wrap"><div class="contact-box"><span class="kicker">04 / Conexões</span><h2>Uma boa ideia fica ainda melhor quando encontra outras pessoas.</h2><p>Tem uma ideia, uma pergunta ou interesse em inteligência artificial e projetos digitais? Vamos abrir uma conversa.</p><div class="actions contact-actions"><a class="btn" href="https://wa.me/5511978857415?text=Ol%C3%A1%2C%20Cassi%21%20Conheci%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Cassi pelo WhatsApp">Conversar no WhatsApp <span>↗</span></a><a class="btn contact-email" href="mailto:cassiakelly995@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Enviar e-mail <span>↗</span></a></div><p class="contact-detail">cassiakelly995@gmail.com · +55 (11) 97885-7415</p></div></div></section>
+<section id="inicio" class="container hero">
+  <div>
+    <div class="eyebrow">CREATIVE TECHNOLOGY & AI</div>
+    <h1>O futuro começa com uma <span class="gradient">ideia.</span></h1>
+    <p class="lead">
+      Sou Cassi Kelly. Exploro as possibilidades da inteligência
+      artificial, da criatividade e da tecnologia para transformar
+      ideias em experiências digitais.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#projetos">Explorar projetos ↗</a>
+      <a class="btn outline" href="#contato">Entrar em contato</a>
+    </div>
+  </div>
+  <div class="portrait">
+    <img src="retrato-cassi-kelly.jpg"
+         alt="Fotografia de Cassi Kelly">
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="container about-grid">
+    <div>
+      <div class="section-label">01 / Sobre mim</div>
+      <h2>Criatividade para imaginar. <span class="gradient">Tecnologia para construir.</span></h2>
+      <p class="description">
+        Acredito que grandes ideias começam com curiosidade.
+        Minha jornada reúne aprendizado contínuo, experimentação
+        e interesse por ferramentas que ampliam o potencial criativo.
+      </p>
+      <p class="description">
+        Cada projeto representa uma oportunidade de aprender,
+        explorar possibilidades e criar algo significativo.
+      </p>
+    </div>
+    <div class="feature-list">
+      <div class="feature">
+        <strong>01 — Inteligência artificial</strong>
+        <p>Exploração de ferramentas e aplicações criativas de IA.</p>
+      </div>
+      <div class="feature">
+        <strong>02 — Experiências digitais</strong>
+        <p>Ideias e interfaces com foco em clareza e funcionalidade.</p>
+      </div>
+      <div class="feature">
+        <strong>03 — Evolução constante</strong>
+        <p>Aprendizado, experimentação e desenvolvimento de projetos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos" class="container">
+  <div class="section-label">02 / Portfólio</div>
+  <h2>Ideias em <span class="gradient">movimento.</span></h2>
+  <p class="description">
+    Conheça as áreas e iniciativas que fazem parte da minha
+    exploração criativa e tecnológica.
+  </p>
+  <div class="projects">
+    <article class="project">
+      <div class="project-icon">✦</div>
+      <h3>SuperPrompt</h3>
+      <p>Projeto voltado à criação e organização de prompts
+      para explorar o potencial da inteligência artificial.</p>
+      <span class="tag">INTELIGÊNCIA ARTIFICIAL</span>
+    </article>
+    <article class="project">
+      <div class="project-icon">◇</div>
+      <h3>Design Digital</h3>
+      <p>Exploração de identidade visual, composição e
+      experiências digitais contemporâneas.</p>
+      <span class="tag">CRIATIVIDADE & DESIGN</span>
+    </article>
+    <article class="project">
+      <div class="project-icon">⌘</div>
+      <h3>Laboratório Criativo</h3>
+      <p>Espaço de experimentação de ideias, ferramentas
+      e novas possibilidades tecnológicas.</p>
+      <span class="tag">EXPERIMENTAÇÃO</span>
+    </article>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="container">
+    <div class="section-label">03 / Contato</div>
+    <h2>Grandes ideias merecem <span class="gradient">boas conexões.</span></h2>
+    <p>Tem uma ideia ou deseja conversar sobre projetos e tecnologia?</p>
+    <div class="buttons">
+      <a class="btn primary"
+         href="https://wa.me/5511978857415"
+         target="_blank" rel="noopener noreferrer">
+        Conversar no WhatsApp ↗
+      </a>
+      <a class="btn outline"
+         href="mailto:cassiakelly995@gmail.com">
+        Enviar e-mail
+      </a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> <strong>Cassi Kelly</strong> · Ideias em movimento.</span><span>Feito com curiosidade, criatividade e tecnologia.</span></div></footer>
-<script>
-const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');
-toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰';});
-links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}));
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body></html>
+
+<footer>
+  <div class="container">
+    © 2026 Cassi Kelly · Creative Technology & AI
+  </div>
+</footer>
+
+</body>
+</html>
